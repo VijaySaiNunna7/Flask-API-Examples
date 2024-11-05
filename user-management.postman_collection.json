@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "94bf7d04-ed66-4dfe-ac30-adb742909a68",
+		"name": "user-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1919740"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email_address\" : \"ameet@chocosoft.com\",\r\n    \"user_name\" : \"ameet\",\r\n    \"Password\" : \"000511\",\r\n    \"phone_number\" : \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.0.1/register",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"1"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ameet\",\r\n    \"password\" : \"parse\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changepassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ameet\",\r\n    \"password\" : \"parse\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.0.0.1/login",
+					"protocol": "http",
+					"host": [
+						"10",
+						"0",
+						"0",
+						"1"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "643c4f65-fb1a-47be-ba77-a009e6d83c0b",
+		"name": "User_Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38073670"
+	},
+	"item": [
+		{
+			"name": "add_employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_name\": \"Varun\",\r\n    \"emp_ID\":\"COD421\",\r\n    \"emp_department\":\"Development\",\r\n    \"Age\":23\r\n    \"mail_id\":\"Varun@gmail.com\",\r\n    \"Mobile_number\":9908952361,\r\n    \"address\":\"DurgamCheruvu\"    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.29.142:5000/add_employee",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"29",
+						"142"
+					],
+					"port": "5000",
+					"path": [
+						"add_employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_employee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_ID\":\"COD421\",\r\n    \"emp_department\":\"Developmet\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.29.142:5000/get_employee",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"29",
+						"142"
+					],
+					"port": "5000",
+					"path": [
+						"get_employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"emp_name\": \"Varun\",\r\n    \"emp_ID\":\"COD421\", \r\n    \"mail_id\":\"Varun07@gmail.com\",\r\n    \"Mobile_number\":9949932403\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.29.142:5000/update_employee",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"29",
+						"142"
+					],
+					"port": "5000",
+					"path": [
+						"update_employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emp_name\": \"Varun\",\r\n    \"emp_ID\":\"COD421\",\r\n    \"emp_department\":\"Development\",\r\n    \"OTP\":\"otp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.29.142:5000/delete_employee",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"29",
+						"142"
+					],
+					"port": "5000",
+					"path": [
+						"delete_employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
